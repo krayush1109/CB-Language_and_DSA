@@ -1,0 +1,25 @@
+{
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/.classpath": true,
+    "**/.factorypath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/React-JS.code-workspace": true
+  },
+  "hide-files.files": [],
+
+  "workbench.colorCustomizations": {
+  "statusBar.background": "#790505", // Change to your preferred color
+  "statusBar.foreground": "#ffffff", // Change text color (optional)
+  // "statusBar.border": "#000000"      // Border color (optional)
+}
+
+
+
+}
