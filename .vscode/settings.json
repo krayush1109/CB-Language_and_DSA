@@ -12,5 +12,9 @@
     "**/.settings": true,
     "**/React-JS.code-workspace": true
   },
-  "hide-files.files": []
+  "hide-files.files": [],
+  "files.associations": {
+    "ostream": "cpp",
+    "iostream": "cpp"
+  }
 }
