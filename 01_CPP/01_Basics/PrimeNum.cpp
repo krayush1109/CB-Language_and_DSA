@@ -5,9 +5,9 @@ int main(){
     int n;
     cin >> n;
     int i=2;
-
+    cout << "Hello " << endl;
     while(i < n){
-        if(n%i == 2){
+        if(n%i == 0){
             cout<< "Not a Prime Number.";
             break;
         }
