@@ -1,2 +1,9 @@
-Hello World
-254
+Decimal: -11
+----------------
+11 is represented as 1011 in binary
+Full Binary No Length : 32
+Full Binary No :   00000000000000000000000000001011
+1's Compliment :   11111111111111111111111111110100
+2's Compliment :   11111111111111111111111111110101
+----------------
+-11 is represented as 11111111111111111111111111110101 in binary
