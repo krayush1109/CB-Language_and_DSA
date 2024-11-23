@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+void decToBin_simple(int n);
 string decToBin(int n);
 string FullBinaryNum(string bin);      
 string OnceComplimentOfBin(string fullBin);
@@ -22,30 +23,48 @@ int main()
     cin >> n;
     cout << "Decimal: " << n << endl;
 
-    decToBin(n);
+    // decToBin(n);
+    decToBin_simple(n);
     
     return 0;
 }
 
+void decToBin_simple(int n){
+    int bin[32];
+    int col=0;
+
+    // 1. binary
+    while (n != 0)
+    {
+        bin[col] = n % 2;
+        n = n/2;
+        col++;        
+    }
+
+    // 2. reversing the binary bit
+    for(int i=col-1; i >= 0; i--)
+        cout << bin[i];
+
+}
+
 string decToBin(int n){
     int originalNum = n;
-    string ans = "";
+    string bin = "";
     if(n >= 0){
         while (n != 0)
         {
-            int digit = n & 1;
-            // ans = (ans * 10) + digit;
-            ans = to_string(digit) + ans;
+            int digit = n & 1;            
+            bin = to_string(digit) + bin;
             n = n >> 1;
         }
-        // cout << "Binary of " << originalNum << " is : " << ans << endl;
+        // cout << "Binary of " << originalNum << " is : " << bin << endl;
     } else{
-        ans = decToBinNegativeNum(n);
+        bin = decToBinNegativeNum(n);
     }
 
-    cout << originalNum << " is represented as " << ans << " in binary" << endl;
+    cout << originalNum << " is represented as " << bin << " in binary" << endl;
 
-    return ans;
+    return bin;
 }
 
 string FullBinaryNum(string bin){        

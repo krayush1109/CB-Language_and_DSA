@@ -15,7 +15,7 @@ void rightTriangle(int n)
         while (col <= total_col)
         {
             cout << "*";
-            col++;
+      -      col++;
         }
         row++;
         cout << endl;
