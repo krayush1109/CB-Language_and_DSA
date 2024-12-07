@@ -71,12 +71,10 @@ void stl_2(){
     vector<int> v2;
     cout << v2.empty() << endl;
 
-}
-
-void 
+} 
 
 int main()
 {
-    // stl_1();
-    stl_2();
+    stl_1();
+    // stl_2();
 }

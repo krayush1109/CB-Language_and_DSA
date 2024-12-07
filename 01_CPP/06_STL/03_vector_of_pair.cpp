@@ -21,12 +21,28 @@ void vector_pair_1()
     vp2.push_back(30);
     vp2.push_back(45);
 
-    vector<int>::iterator it = vp2.begin();
+    // vector<int>::iterator it = vp2.begin();
+    // or
+    auto it = vp2.begin();
     cout << *it << endl;
     cout << *(it + 1) << endl;
     cout << *(it + 2) << endl;
+    cout << *(it + 3) << endl;
 
-    
+    vector<int>::iterator it2 = vp2.begin();
+    cout << *it2 << endl;
+
+    // Print vector using iterator : 
+    cout << "Print vector using iterator : " << endl;
+    for(auto it = vp2.begin(); it < vp2.end(); it++ ){
+        cout << *it << endl;
+    }
+
+    cout << "Using for each loop : " << endl;
+
+    for(auto i : vp2){
+        cout << i << endl;        
+    }
 
 }
 
